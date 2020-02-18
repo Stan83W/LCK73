@@ -159,45 +159,43 @@
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script type="text/javascript">
 
-      // navigation starts here
-      $("#toggle").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+      // Toggle Menu
+
+      var t1 = new TimelineMax({ paused: true });
+
+      t1.to(".overlay", 1, {
+        opacity: 1,
+        ease: Expo.easeInOut
       });
 
-      $("#resize ul li a").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+      t1.staggerFrom(
+        ".menu ul li",
+        1,
+        { y: 100, opacity: 0, ease: Expo.easeOut },
+        0.1
+      );
+
+      t1.reverse();
+
+      var overlay = document.querySelector(".overlay");
+
+      $(document).on("click", ".menu-toggle", function() {
+        t1.reversed(!t1.reversed());
+        overlay.style.visibility = "visible";
       });
 
-      $(".close-btn").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+      $(document).on("click", ".close-btn", function() {
+        t1.reversed(!t1.reversed());
+        setTimeout(`overlay.style.visibility = "hidden";`, 2000);
       });
 
-      // navigation ends here
-
-      // nav animation
-
-      TweenMax.from("#brand", 1, {
-            delay: 0.4,
-            y: 10,
-            opacity: 0,
-            ease: Expo.easeInOut
-      })
-
-      TweenMax.staggerFrom("#menu li a", 1, {
-            delay: 0.4,
-            opacity: 0,
-            ease: Expo.easeInOut
-      }, 0.1);
-
-      // nav animation ends
-
-      new WOW().init();
+      t1.reverse();
+      $(document).on("click", "li", function() {
+        t1.reversed(!t1.reversed());
+        setTimeout(`overlay.style.visibility = "hidden";`, 2000);
+      });
 
 
       </script>
-      <script src="app.js"></script>
 </body>
 </html>
