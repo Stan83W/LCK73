@@ -541,7 +541,7 @@ textarea:focus {
   right: 0;
   margin: 2em;
   color: white;
-  z-index: 2;
+  z-index: 1;
 }
 
 .menu-toggle ion-icon {
