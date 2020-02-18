@@ -37,52 +37,6 @@ html, body {
       }
 }
 
-/*--------------- typewriter effect --------------- */
-.line {
-      width: 24em;
-      top: 50%;
-      margin: auto;
-      border-right: 2px solid rgba(255, 255, 255, 0.75);
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      transform: translateY(-50%);
-}
-
-.anim-typewriter {
-      animation: typewriter 4s steps(40) 1s 1 normal both,
-      blinkTextCussor 500ms steps(40) infinite normal;
-}
-
-@keyframes typewriter {
-      from {
-            width: 0;
-      }
-      to {
-            width: 18em;
-      }
-}
-
-@media(max-width: 768px) {
-      @keyframes typewriter {
-            from {
-                  width: 0;
-            }
-            to {
-                  width: 17em;
-            }
-      }
-}
-
-@keyframes blinkTextCussor {
-      from {
-            border-right-color: rgba(255, 255, 255, 0.75);
-      }
-      to {
-            border-right-color: transparent;
-      }
-}
-
 /*--------------- hero section --------------- */
 .hero {
       height: 100vh;
@@ -583,10 +537,11 @@ textarea:focus {
 }
 .menu-toggle {
   position: fixed;
+  top: 0;
   right: 0;
   margin: 2em;
   color: white;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu-toggle ion-icon {
@@ -679,4 +634,19 @@ textarea:focus {
 
 .footer {
   margin: 32px;
+}
+
+/* Sticky Nav */
+
+#menu {
+  font-family: "NPB";
+  background: #0f0f0f; 
+  color: white; 
+  padding: 1em; 
+  width: 100%;
+  display: none; 
+  position: fixed; 
+  top: 0;
+  text-align: center;
+  z-index: 2;
 }

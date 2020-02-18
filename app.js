@@ -155,3 +155,13 @@ $(".navigation-link-7").hover(function() {
 $(".navigation-link-8").hover(function() {
   $(".project-preview").css({ "background-image": "url(images/img-8.jpg)" });
 });
+
+// Scrolling Nav
+
+$(window).scroll(function(e){
+    if ($(this).scrollTop() > 300) { // choose the value you want.
+        $('#menu:hidden').slideDown();
+    } else {
+        $('#menu:visible').slideUp();
+    }
+});
