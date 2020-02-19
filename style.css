@@ -511,6 +511,7 @@ textarea:focus {
   color: white;
 }
 .hero-logo a:hover {
+  transition: all 0.5s ease;
   color: white;
   opacity: 0.5;
   text-decoration: none;
@@ -523,8 +524,15 @@ textarea:focus {
   color: white;
   z-index: 3;
 }
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
 .close-btn {
   z-index: 3; 
+}
+.close-btn:hover {
+  cursor: pointer;
 }
 
 .menu-toggle ion-icon {
@@ -600,7 +608,11 @@ textarea:focus {
   text-transform: uppercase;
   font-size: 0.7rem;
 }
-
+.media ul li a:hover {
+  transition: all 0.5s ease;
+  opacity: 0.5;
+  text-decoration: none;
+}
 .ref-list {
   display: flex;
   padding: 0;
@@ -622,7 +634,10 @@ textarea:focus {
 }
 
 .view-photos a:hover {
+  transition: all 0.5s ease;
   color: white;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 /* Sticky Nav */
