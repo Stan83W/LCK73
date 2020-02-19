@@ -239,7 +239,7 @@ h6 {
 .hero-content p {
       font-weight: 300;
       line-height: 36px;
-      color: grey;
+      color: white;
 }
 
 .hero-content h6 {
@@ -705,4 +705,13 @@ textarea:focus {
 }
 .info-title {
   text-transform: uppercase;
+}
+.hero-content a {
+  color: white;
+}
+.hero-content a:hover {
+  transition: all 0.5s ease;
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
 }
