@@ -682,3 +682,12 @@ textarea:focus {
   opacity: 0.5;
   text-decoration: none;
 }
+.info a {
+  color: grey;
+}
+.info a:hover {
+  transition: all 0.5s ease;
+  color: grey;
+  opacity: 0.5;
+  text-decoration: none;
+}
