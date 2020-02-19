@@ -673,3 +673,12 @@ textarea:focus {
   color: white;
   padding-right: 65px;
 }
+.collab a {
+  color: white;
+}
+.collab a:hover {
+  transition: all 0.5s ease;
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
+}
