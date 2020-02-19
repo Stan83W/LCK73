@@ -211,14 +211,9 @@ h6 {
       height: 1px;
 }
 
-.info h4 {
-      font-size: 18px;
-      font-weight: lighter;
-}
-
 .info p {
+      font-size: 0.7rem;
       color: grey;
-      font-weight: lighter;
 }
 
 .info li {
@@ -226,18 +221,6 @@ h6 {
       color: #fff;
       font-size: 18px;
       padding-left: 20px;
-}
-
-#media ul {
-      list-style: none;
-      padding-left: 0;
-}
-
-#media ul li {
-      display: inline-block;
-}
-#media ul li:first-child {
-      padding-left: 0;
 }
 
 @media(max-width: 768px) {
@@ -433,12 +416,19 @@ textarea:focus {
   text-transform: uppercase !important;
 }
 
+.intro {
+  padding: 0 30%;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
 /* Hover Effect */
 
 .navigation-wrapper ul {
   margin-top: 100px;
   margin-left: 2em;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   list-style: none;
   padding-left: 0;
   text-transform: uppercase;
@@ -507,24 +497,14 @@ textarea:focus {
   }
 }
 
-.sub {
-  text-align: left;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.intro {
-  padding: 0 30%;
-  color: rgba(255, 255, 255, 0.3);
-}
-
 /* Overlay Navigation */
 
 .hero-logo {
   position: fixed;
-  margin: 2em;
+  margin: 32px;
   font-family: "NPR";
-  font-style: 16px;
-  mix-blend-mode: difference;
+  text-transform: uppercase;
+  font-size: 0.7rem;
   z-index: 2;
 }
 .hero-logo a {
@@ -539,9 +519,12 @@ textarea:focus {
   position: fixed;
   top: 0;
   right: 0;
-  margin: 2em;
+  margin: 32px;
   color: white;
-  z-index: 1;
+  z-index: 3;
+}
+.close-btn {
+  z-index: 3; 
 }
 
 .menu-toggle ion-icon {
@@ -553,7 +536,7 @@ textarea:focus {
   width: 100%;
   height: 100vh;
   background: #0f0f0f;
-  z-index: 1;
+  z-index: 3;
   opacity: 0;
   visibility: hidden;
 }
@@ -600,7 +583,7 @@ textarea:focus {
   position: absolute;
   right: 0;
   bottom: 0;
-  margin: 2em;
+  margin: 32px;
   z-index: 2;
 }
 
@@ -609,19 +592,29 @@ textarea:focus {
 }
 
 .media ul li {
-  padding: 10px 0;
+  padding: 0 0 0 10px;
 }
 
 .media ul li a {
   color: white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.ref-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .view-photos {
   position: absolute;
   left: 0;
   bottom: 1em;
-  margin: 2em;
+  margin: 32px;
   z-index: 2;
+  text-transform: uppercase;
+  font-size: 0.7rem;
 }
 
 .view-photos a {
@@ -630,10 +623,6 @@ textarea:focus {
 
 .view-photos a:hover {
   color: white;
-}
-
-.footer {
-  margin: 32px;
 }
 
 /* Sticky Nav */
@@ -649,4 +638,23 @@ textarea:focus {
   top: 0;
   text-align: center;
   z-index: 2;
+}
+
+/* Footer */
+
+.footer-title {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "NPB";
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.footer {
+  margin: 32px;
+  line-height: 1.3;
+}
+.collab p {
+  color: white;
+  padding-right: 65px;
 }
