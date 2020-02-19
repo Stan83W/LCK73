@@ -703,3 +703,6 @@ textarea:focus {
 .hero-content .row {
   margin-right: auto !important;
 }
+.info-title {
+  text-transform: uppercase;
+}
