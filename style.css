@@ -10,10 +10,6 @@
   font-family: "NPSB";
   src: url(fonts/NPSB.otf);
 }
-@font-face {
-  font-family: "CTB";
-  src: url(fonts/CTB.otf);
-}
 
 /*--------------- basic styling --------------- */
 html, body {
@@ -265,7 +261,8 @@ h6 {
 }
 
 .image {
-      background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
+      background: url(images/info-bg.jpg) no-repeat;
+      background-size: cover;
 }
 
 /*--------------- contact form --------------- */
@@ -694,6 +691,13 @@ textarea:focus {
 /* Info Page */
 
 .info-page {
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin: 32px;
+}
+.banner {
+  margin-left: 0;
+  margin-right: 0;
+}
+.info-page p {
+  font-size: 1rem;
+  line-height: 1.3;
 }
