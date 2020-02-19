@@ -693,11 +693,13 @@ textarea:focus {
 .info-page {
   margin: 32px;
 }
-.banner {
-  margin-left: 0;
-  margin-right: 0;
+.banner > .row {
+  margin-right: auto !important;
 }
 .info-page p {
   font-size: 1rem;
   line-height: 1.3;
+}
+.hero-content .row {
+  margin-right: auto !important;
 }
