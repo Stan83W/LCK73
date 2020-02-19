@@ -36,7 +36,7 @@
         <section class="hero-section">
           <!-- LOGO -->
           <div class="hero-logo">
-            contact
+            <a href="index.html">back</a>
           </div>
 
           <!-- TOGGLE BUTTON -->
@@ -44,6 +44,9 @@
             <ion-icon name="menu"></ion-icon>
           </div>
 
+          <div id="menu">
+            <h4>LCK_73</h4>
+          </div>
 
           <div class="overlay">
             <div class="close-btn">
@@ -195,6 +198,15 @@
         setTimeout(`overlay.style.visibility = "hidden";`, 2000);
       });
 
+      // Scrolling Nav
+
+      $(window).scroll(function(e){
+          if ($(this).scrollTop() > 300) { // choose the value you want.
+              $('#menu:hidden').slideDown();
+          } else {
+              $('#menu:visible').slideUp();
+          }
+      });
 
       </script>
 </body>
