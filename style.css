@@ -341,7 +341,7 @@ textarea:focus {
 }
 @media (max-width: 900px) {
   .hero-img {
-    width: 95%;
+    width: 95vw;
   }
 }
 
