@@ -318,13 +318,6 @@ textarea:focus {
       text-align: right;
 }
 
-
-/* Custom logo */
-
-.logo-lck {
-      width: 85px;
-}
-
 /* Hero Banner */
 
 .hero-section {
@@ -365,7 +358,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   .hero-title .letter {
-    font-size: 45px !important;
+    font-size: 40px !important;
   }
 }
 
@@ -455,7 +448,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   .navigation-list a {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -532,7 +525,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   .overlay ul li {
-    font-size: 40px;
+    font-size: 35px;
     padding: 10px 0;
   }
 }
