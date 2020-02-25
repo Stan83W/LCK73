@@ -348,6 +348,7 @@ textarea:focus {
 @media (max-width: 900px) {
   .hero-img {
     width: 95vw;
+    transform: translate(-50%, -84%);
   }
 }
 
