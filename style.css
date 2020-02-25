@@ -345,12 +345,6 @@ textarea:focus {
 .hero-img img {
   width: 100%;
 }
-@media (max-width: 900px) {
-  .hero-img {
-    width: 95vw;
-    transform: translate(-50%, -84%);
-  }
-}
 
 .hero-title {
   width: 90vw;
@@ -482,11 +476,6 @@ textarea:focus {
   color: rgb(0, 255, 0);
   text-decoration: none;
 }
-@media (max-width: 900px) {
-  .hero-logo {
-    display: none;
-  }
-}
 
 .menu-toggle {
   position: fixed;
@@ -499,22 +488,12 @@ textarea:focus {
 .menu-toggle:hover {
   cursor: pointer;
 }
-@media (max-width: 900px) {
-  .menu-toggle {
-    font-size: 1.2rem;
-  } 
-}
 
 .close-btn {
   z-index: 3; 
 }
 .close-btn:hover {
   cursor: pointer;
-}
-@media (max-width: 900px) {
-  .close-btn {
-    font-size: 1.2rem;
-  }
 }
 
 .menu-toggle ion-icon {
