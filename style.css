@@ -583,7 +583,7 @@ textarea:focus {
 .view-photos {
   position: absolute;
   left: 0;
-  bottom: 1em;
+  bottom: 0;
   margin: 32px;
   z-index: 1;
   text-transform: uppercase;
