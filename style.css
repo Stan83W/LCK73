@@ -461,7 +461,7 @@ textarea:focus {
 /* Overlay Navigation */
 
 .hero-logo {
-  position: fixed;
+  position: absolute;
   margin: 32px;
   font-family: "NPR";
   text-transform: uppercase;
