@@ -500,7 +500,7 @@ textarea:focus {
 }
 @media (max-width: 900px) {
   .menu-toggle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   } 
 }
 
@@ -512,7 +512,7 @@ textarea:focus {
 }
 @media (max-width: 900px) {
   .close-btn {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
