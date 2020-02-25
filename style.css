@@ -481,6 +481,12 @@ textarea:focus {
   color: rgb(0, 255, 0);
   text-decoration: none;
 }
+@media (max-width: 900px) {
+  .hero-logo {
+    display: none;
+  }
+}
+
 .menu-toggle {
   position: fixed;
   top: 0;
@@ -492,12 +498,22 @@ textarea:focus {
 .menu-toggle:hover {
   cursor: pointer;
 }
+@media (max-width: 900px) {
+  .menu-toggle {
+    font-size: 1.5rem;
+  } 
+}
 
 .close-btn {
   z-index: 3; 
 }
 .close-btn:hover {
   cursor: pointer;
+}
+@media (max-width: 900px) {
+  .close-btn {
+    font-size: 1.5rem;
+  }
 }
 
 .menu-toggle ion-icon {
@@ -517,7 +533,7 @@ textarea:focus {
 .overlay ion-icon {
   position: fixed;
   right: 0;
-  margin: 2em;
+  margin: 32px;
   color: white;
 }
 
