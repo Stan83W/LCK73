@@ -97,7 +97,7 @@ $(document).on("click", ".close-btn", function() {
 t1.reverse();
 $(document).on("click", "li", function() {
   t1.reversed(!t1.reversed());
-  setTimeout(`overlay.style.visibility = "hidden";`, 2000);
+  setTimeout(`overlay.style.visibility = "hidden";`, 1000);
 });
 
 // Hover Effect
