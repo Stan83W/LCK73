@@ -24,9 +24,8 @@ html, body {
 }
 
 ::selection {
-  color: rgb(0,255, 0);
-  background: rgba(0,255, 0, 0.15);
-  text-shadow: 0.015em 0.015em 0.05em rgba(0,0,0,0.3);
+  color: white;
+  background: #3c3c3c;
 }
 
 .whitespace {
@@ -357,6 +356,12 @@ textarea:focus {
   text-transform: uppercase;
   font-size: 0.7rem;
 }
+.custom-title {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-family: "NPB";
+  text-transform: uppercase !important;
+}
 
 /* Hover Effect */
 
@@ -447,7 +452,7 @@ textarea:focus {
 }
 .hero-logo a:hover {
   transition: all 0.5s ease;
-  color: rgb(0, 255, 0);
+  color: grey;
   text-decoration: none;
 }
 
@@ -545,7 +550,7 @@ textarea:focus {
 }
 .media ul li a:hover {
   transition: all 0.5s ease;
-  color: rgb(0, 255, 0);
+  color: grey;
   text-decoration: none;
 }
 .ref-list {
@@ -570,7 +575,7 @@ textarea:focus {
 
 .view-photos a:hover {
   transition: all 0.5s ease;
-  color: rgb(0, 255, 0);
+  color: grey;
   text-decoration: none;
 }
 
@@ -664,7 +669,7 @@ textarea:focus {
 }
 .collab a:hover {
   transition: all 0.5s ease;
-  color: rgb(0, 255, 0);
+  color: grey;
   text-decoration: none;
 }
 .info a {
@@ -704,3 +709,4 @@ textarea:focus {
   opacity: 0.5;
   text-decoration: none;
 }
+
