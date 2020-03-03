@@ -11,7 +11,7 @@
   src: url(fonts/NPSB.otf);
 }
 
-/*--------------- basic styling --------------- */
+/* basic styling */
 
 html, body {
   margin: 0;
@@ -49,7 +49,7 @@ html, body {
   }
 }
 
-/*--------------- hero section --------------- */
+/* hero section */
 
 .hero {
       height: 100vh;
@@ -71,7 +71,7 @@ html, body {
       }
 }
 
-/*--------------- projects section --------------- */
+/* projects section */
 h6 {
       text-align: center;
 }
@@ -175,7 +175,7 @@ h6 {
       }
 }
 
-/*--------------- work page --------------- */
+/* work page */
 
 .hero-content {
       margin-left: 0%;
@@ -199,7 +199,7 @@ h6 {
       }
 }
 
-/*---------------about page --------------- */
+/* about page */
 
 .about {
       height: 500px;
@@ -210,7 +210,7 @@ h6 {
       background-size: cover;
 }
 
-/*--------------- contact form --------------- */
+/* contact form */
 
 #contact-form {
       margin: 5% 1.4%;
@@ -283,7 +283,7 @@ textarea:focus {
       }
 }
 
-/*--------------- project page --------------- */
+/* project page */
 
 .prev, .next p {
       color: grey;
@@ -350,11 +350,12 @@ textarea:focus {
   text-transform: uppercase !important;
 }
 
-.intro {
+.projects-intro {
   padding: 0 30%;
   color: grey;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 20px;
+  font-family: "Cinzel";
 }
 .custom-title {
   color: transparent;
@@ -527,14 +528,6 @@ textarea:focus {
   color: white;
 }
 
-.media {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin: 32px;
-  z-index: 2;
-}
-
 .media ul {
   list-style: none;
 }
@@ -544,13 +537,12 @@ textarea:focus {
 }
 
 .media ul li a {
-  color: white;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-.media ul li a:hover {
   transition: all 0.5s ease;
   color: grey;
+}
+.media ul li a:hover {
+  color: grey;
+  opacity: 0.5;
   text-decoration: none;
 }
 .ref-list {
@@ -585,13 +577,14 @@ textarea:focus {
   font-family: "NPB";
   background: #0f0f0f; 
   color: white; 
-  padding: 24px 0 24px 0; 
+  padding: 14px 0 14px 0; 
   width: 100%;
   display: none; 
   position: fixed; 
   top: 0;
   text-align: center;
   z-index: 2;
+  font-size: 20px !important;
 }
 #menu a {
   color: white;
@@ -608,11 +601,6 @@ textarea:focus {
 
 .collab {
   color: rgba(255, 255, 255, 0.3);
-}
-
-.collab p {
-  font-weight: lighter !important;
-  margin-bottom: 20px;
 }
 
 .hr {
@@ -652,11 +640,15 @@ textarea:focus {
   margin: 32px;
   line-height: 1.3;
 }
+
 .collab p {
+  font-family: "Cinzel";
+  margin-bottom: 20px;
   color: white;
   padding-right: 65px;
-  font-size: 1.2rem;
+  font-size: 15px;
 }
+
 @media(max-width: 900px) {
   .collab p {
     padding-right: 0;
@@ -710,3 +702,212 @@ textarea:focus {
   text-decoration: none;
 }
 
+/* Intro + Header */
+
+.custom-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo,
+.lang {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 1.2em 2em 2em 2em;
+}
+
+.logo {
+    color: white;
+    font-family: "NPB";
+}
+
+.lang {
+    right: 0;
+    font-family: "Cinzel";
+    color: grey;
+}
+
+.container-left {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+}
+
+.container-right {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    left: 50%;
+    background: url(images/img-right.jpeg) no-repeat 50% 50%;
+    background-size: 100%;
+    animation: animatedBackground1 6s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 5s;
+}
+
+@keyframes animatedBackground1 {
+    from {
+        background-size: 460%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+
+.container-left-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background: url(images/img-left.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    animation: animatedBackground2 6s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 5s;
+}
+
+@keyframes animatedBackground2 {
+    from {
+        background-size: 760%;
+    }
+    to {
+        background-size: 210%;
+    }
+}
+
+.social-media {
+    position: absolute;
+    bottom: 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 2em;
+}
+
+.social-media ul li {
+    padding: 10px 0;
+}
+
+.social-media ul li a {
+    color: #8f8776;
+}
+
+.left-bottom-text {
+    position: absolute;
+    font-size: 20px;
+    font-family: "Cinzel";
+    text-transform: uppercase;
+    font-weight: 400;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: 2em;
+}
+.left-bottom-text a {
+  color: grey;
+  transition: all 0.5s ease;
+}
+.left-bottom-text a:hover {
+  color: grey;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.right-upper-text {
+    position: absolute;
+    color: red;
+    font-size: 48px;
+    font-family: "NPR";
+    text-transform: uppercase;
+    padding: 5px;
+    opacity: 0;
+    animation: blinker 1s linear infinite;
+    animation-delay: 8s;
+    line-height: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 1;
+    }
+}
+
+.right-upper-text span {
+    font-style: italic;
+}
+
+.right-bottom-text {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    font-family: "Arial";
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding: 26px;
+    bottom: 0;
+}
+
+@media (max-width: 990px) {
+    .container-left,
+    .container-right {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container-right {
+        top: 100vh;
+        left: 0;
+    }
+
+    .left-img-btn,
+    .social-media {
+        display: none;
+    }
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.loader marquee {
+    opacity: 0.2;
+    text-transform: uppercase;
+    line-height: 180px;
+    margin: 0;
+    padding: 0;
+    color: #646464;
+    font-size: 200px;
+    font-family: "Cinzel";
+}
+
+.loader .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loader .intro h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "NPB";
+}
+
+.intro-title .letter {
+    display: inline-block;
+    line-height: 1em;
+}

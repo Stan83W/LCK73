@@ -16,7 +16,7 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
       <!-- google fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet"/>
 
       <!-- for on scroll animations -->
       <link rel="stylesheet" href="animate.css">
@@ -36,23 +36,29 @@
 
 </head>
 <body>
+  <!-- Intro + Header -->
+  <div class="loader">
+      <marquee direction="right" scrollamount="10"
+          >Digital studio based in Paris</marquee
+      >
+      <marquee direction="left" scrollamount="30"
+          >Art direction, graphic design, UI/UX</marquee
+      >
+      <marquee direction="right" scrollamount="20"
+          >Art direction, graphic design, UI/UX</marquee
+      >
+      <marquee direction="" scrollamount="40"
+          >Digital studio based in Paris</marquee
+      >
+      <div class="intro">
+          <h1 class="intro-title">LCK_73</h1>
+      </div>
+  </div>
 
-      <!-- HERO SECTION -->
-      <a name="home"></a>
-      <div class="wrapper">
-        <section class="hero-section">
-          <!-- LOGO -->
-          <div class="hero-logo">
-            <a href="mailto:lck73.studio@gmail.com">contact</a>
-          </div>
-
-          <!-- TOGGLE BUTTON -->
-          <div class="menu-toggle">
-            <ion-icon name="menu"></ion-icon>
-          </div>
-
-          <!-- SOCIAL MEDIA ICONS -->
-          <div class="media">
+  <div class="custom-container">
+      <div class="logo">LCK_73</div>
+      <div class="container-left">
+          <div class="lang media">
             <ul class="ref-list">
               <li>
                 <a href="https://www.behance.net/lck73" target="_blank">Be</a>
@@ -65,6 +71,48 @@
               </li>
             </ul>
           </div>
+          <div class="right-upper-text">
+            Available for inquiries, let's talk about <span>your project</span>
+          </div>
+          <!-- <div class="container-left-img"></div> -->
+          <div class="left-bottom-text">
+              <a href="#projects">View projects</a>
+          </div>
+      </div>
+      <div class="container-right">
+          
+      </div>
+  </div>
+
+
+      <!-- HERO SECTION -->
+      <a name="home"></a>
+      <div class="wrapper">
+        <section class="hero-section">
+          <!-- LOGO -->
+          <!-- <div class="hero-logo">
+            <a href="mailto:lck73.studio@gmail.com">contact</a>
+          </div> -->
+
+          <!-- TOGGLE BUTTON -->
+          <!-- <div class="menu-toggle">
+            <ion-icon name="menu"></ion-icon>
+          </div> -->
+
+          <!-- SOCIAL MEDIA ICONS -->
+          <!-- <div class="media">
+            <ul class="ref-list">
+              <li>
+                <a href="https://www.behance.net/lck73" target="_blank">Be</a>
+              </li>
+              <li>
+                <a href="http://instagram.com/lck.73" target="_blank">In</a>
+              </li>
+              <li>
+                <a href="http://facebook.com/lck73studio" target="_blank">Fa</a>
+              </li>
+            </ul>
+          </div> -->
 
           <div id="menu">
             <a href="index.html">
@@ -73,21 +121,21 @@
           </div>
 
           <!-- VIEW PHOTOS LINK -->
-          <div class="view-photos">
+          <!-- <div class="view-photos">
             <a href="#projects">view projects</a>
-          </div>
+          </div> -->
 
             <!-- Hero Banner -->    
-            <section class="hero-section">
-                <!-- HERO-IMAGE -->
+            <!-- <section class="hero-section">
+                
                 <div class="hero-img">
                   <img src="images/hero-bg.jpg" class="hero-img-parallax" />
                 </div>
 
-                <!-- HERO-TITLE -->
                 <div class="hero-title">
                   <h1 class="h1">LCK_73 Studio</h1>
                 </div>
+
                 <div class="overlay">
                   <div class="close-btn">
                     <ion-icon name="close"></ion-icon>
@@ -106,8 +154,7 @@
                     </ul>
                   </div>
                 </div>
-
-            </section>
+            </section> -->
 
             <!-- hero section ends here -->
 
@@ -117,7 +164,7 @@
             <div class="whitespace"></div>
             <div class="whitespace"></div>
             <a name="projects"></a>
-            <h6 class="intro">selected projects</h6>
+            <h6 class="projects-intro">selected projects</h6>
             
             <!-- Hover Effect -->
 
@@ -172,11 +219,14 @@
 
             <!-- projects section ends here -->
 
+            <div class="hr footer">
+              <div class="row"></div>
+            </div>
             <!-- footer starts here -->
             <a name="info"></a>
             <div class="footer">
               <div>
-                <div class="whitespace"></div>
+                <div class="mini-whitespace"></div>
                   <div class="collab">
                     <div class="row">
                       <div class="col-lg-4">
@@ -248,12 +298,12 @@
 
                       </div>
                     </div>
-                    </div>
+                  </div>
 
                     <div class="mini-whitespace"></div>
 
                     <div class="hr">
-                          <div class="row"></div>
+                      <div class="row"></div>
                     </div>
 
                     <div class="mini-whitespace"></div>
