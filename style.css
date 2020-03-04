@@ -911,3 +911,12 @@ textarea:focus {
     display: inline-block;
     line-height: 1em;
 }
+
+sup {
+  font-size: 28px !important;
+  font-family: "Cinzel";
+  color: grey;
+  -webkit-text-stroke: 0;
+  top: -2em !important;
+  padding-left: 15px;
+}
