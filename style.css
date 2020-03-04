@@ -41,11 +41,11 @@ html, body {
 
 .mini-whitespace {
   width: 100%;
-  height: 40px;
+  height: 20px;
 }
 @media(max-width: 768px) {
   .mini-whitespace {
-    height: 20px;
+    height: 15px;
   }
 }
 
@@ -631,9 +631,9 @@ textarea:focus {
 .footer-title {
   text-align: left;
   text-transform: uppercase;
-  font-family: "NPB";
+  font-family: "NPR";
   color: grey;
-  font-size: 0.8rem;
+  font-size: 36px;
 }
 
 .footer {
