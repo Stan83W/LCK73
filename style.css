@@ -915,7 +915,7 @@ textarea:focus {
 sup {
   font-size: 28px !important;
   font-family: "Cinzel";
-  color: grey;
+  color: white;
   -webkit-text-stroke: 0;
   top: -2em !important;
   padding-left: 15px;
