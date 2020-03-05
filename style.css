@@ -183,7 +183,6 @@ h6 {
 
 .hero-content p {
       font-weight: 300;
-      line-height: 36px;
       color: white;
 }
 
@@ -582,10 +581,12 @@ textarea:focus {
   top: 0;
   text-align: center;
   z-index: 2;
-  font-size: 20px !important;
 }
 #menu a {
   color: white;
+}
+#menu h4 {
+  font-size: 20px !important;
 }
 #menu a:hover {
   transition: all 0.5s ease;
@@ -686,29 +687,21 @@ textarea:focus {
 /* Info Page */
 
 .info-page {
-  margin: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.banner > .row {
-  margin-right: auto !important;
-}
+
 .info-page p {
-  font-size: 1rem;
+  font-size: 24px;
   line-height: 1.3;
+  text-align: center;
+  font-family: "Cinzel";
 }
-.hero-content .row {
-  margin-right: auto !important;
-}
+
 .info-title {
   text-transform: uppercase;
-}
-.hero-content a {
-  color: white;
-}
-.hero-content a:hover {
-  transition: all 0.5s ease;
-  color: white;
-  opacity: 0.5;
-  text-decoration: none;
 }
 
 /* Intro + Header */
@@ -729,8 +722,17 @@ textarea:focus {
 .logo {
     color: white;
     font-family: "NPB";
+    z-index: 2;
 }
-
+.logo a {
+  transition: 0.5s all ease; 
+  color: white;
+}
+.logo a:hover {
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
+}
 .lang {
     right: 0;
     font-family: "Cinzel";
