@@ -433,7 +433,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   .navigation-list a {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 
@@ -917,7 +917,7 @@ textarea:focus {
 }
 @media (max-width: 990px) {
   .intro-title .letter {
-    font-size: 54px;
+    font-size: 48px;
   }
 }
 
