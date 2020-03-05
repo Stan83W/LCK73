@@ -355,6 +355,11 @@ textarea:focus {
   font-size: 20px;
   font-family: "Cinzel";
 }
+@media (max-width: 900px) {
+  .projects-intro {
+    display: none;
+  }
+}
 .custom-title {
   color: transparent;
   -webkit-text-stroke: 1px white;
@@ -772,7 +777,7 @@ textarea:focus {
 }
 .container-right a:hover {
   color: grey;
-  opacity: 0.5;
+  opacity: 0.5 !important;
   text-decoration: none;
 }
 
