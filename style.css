@@ -576,7 +576,6 @@ textarea:focus {
   font-family: "NPB";
   background: #0f0f0f; 
   color: white; 
-  padding: 14px 0 14px 0; 
   width: 100%;
   display: none; 
   position: fixed; 
@@ -594,7 +593,12 @@ textarea:focus {
   opacity: 0.5;
   text-decoration: none;
 }
-
+.menu-line {
+  padding: 14px 0 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  margin-left: 32px;
+  margin-right: 32px;
+}
 
 /* Footer */
 
