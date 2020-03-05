@@ -351,7 +351,6 @@ textarea:focus {
 }
 
 .projects-intro {
-  padding: 0 30%;
   color: grey;
   text-transform: uppercase;
   font-size: 20px;
@@ -434,7 +433,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   .navigation-list a {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -635,6 +634,12 @@ textarea:focus {
   color: grey;
   font-size: 36px;
 }
+@media(max-width: 768px) {
+  .footer-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+}
 
 .footer {
   margin: 32px;
@@ -652,7 +657,7 @@ textarea:focus {
 @media(max-width: 900px) {
   .collab p {
     padding-right: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -862,8 +867,7 @@ textarea:focus {
     }
 
     .container-right {
-        top: 100vh;
-        left: 0;
+        display: none;
     }
 
     .left-img-btn,
@@ -911,6 +915,11 @@ textarea:focus {
     display: inline-block;
     line-height: 1em;
 }
+@media (max-width: 990px) {
+  .intro-title .letter {
+    font-size: 54px;
+  }
+}
 
 sup {
   font-size: 28px !important;
@@ -919,4 +928,11 @@ sup {
   -webkit-text-stroke: 0;
   top: -2em !important;
   padding-left: 15px;
+}
+@media (max-width: 990px) {
+  sup {
+    display: none;
+    /*font-size: 11px !important;
+    padding-left: 10px;*/
+  }
 }
