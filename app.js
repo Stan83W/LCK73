@@ -263,6 +263,13 @@ TweenMax.from(".lang", 2, {
     ease: Expo.easeInOut
 });
 
+TweenMax.from(".info-right", 2, {
+    delay: 6.1,
+    y: 10,
+    opacity: 0,
+    ease: Expo.easeInOut
+});
+
 TweenMax.from(".left-img-cap", 2, {
     delay: 6.2,
     y: 10,

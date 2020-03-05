@@ -699,7 +699,12 @@ textarea:focus {
   text-align: center;
   font-family: "Cinzel";
 }
-
+@media(max-width: 900px) {
+  .info-page p {
+    font-size: 1rem;
+    min-width: 250px;
+  }
+}
 .info-title {
   text-transform: uppercase;
 }
@@ -754,6 +759,21 @@ textarea:focus {
     background-size: 100%;
     animation: animatedBackground1 6s cubic-bezier(0.19, 1, 0.22, 1);
     animation-delay: 5s;
+}
+.container-right a {
+  position: absolute;
+  margin: 1.2em 2em 2em 2em;
+  font-size: 20px;
+  font-family: "Cinzel";
+  text-transform: uppercase;
+  color: grey;
+  right: 0;
+  transition: 0.5s all ease;
+}
+.container-right a:hover {
+  color: grey;
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 @keyframes animatedBackground1 {
@@ -811,7 +831,6 @@ textarea:focus {
     font-size: 20px;
     font-family: "Cinzel";
     text-transform: uppercase;
-    font-weight: 400;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -938,7 +957,5 @@ sup {
 @media (max-width: 990px) {
   sup {
     display: none;
-    /*font-size: 11px !important;
-    padding-left: 10px;*/
   }
 }
