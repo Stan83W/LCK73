@@ -296,10 +296,11 @@ let Size = 0.001;
 
             function increaseSize() {
                 var elem = document.getElementById("text");
+                var textvh = $(window).innerWidth() * 0.15; // 5 vh
                 var text = new Blotter.Text("LCK_73", {
                     family: "NPB",
                     weight: 100,
-                    size: 180,
+                    size: textvh,
                     fill: "white",
                     needsUpdate: true
                 });
