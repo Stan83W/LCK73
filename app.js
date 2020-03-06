@@ -194,7 +194,7 @@ $(window).scroll(function(e){
 
 // Intro + Header
 
-var textWrapper = document.querySelector(".intro-title");
+/*var textWrapper = document.querySelector(".intro-title");
 textWrapper.innerHTML = textWrapper.textContent.replace(
     /([^\x00-\x80]|\w)/g,
     "<span class='letter'>$&</span>"
@@ -222,7 +222,7 @@ anime
         delay: function(el, i) {
             return 700 + 50 * i;
         }
-    });
+    });*/
 
 TweenMax.to(".loader", 2.2, {
     delay: 5,
@@ -289,3 +289,34 @@ TweenMax.from(".right-bottom-text", 2, {
     opacity: 0,
     ease: Expo.easeInOut
 });
+
+// Blotter intro
+
+let Size = 0.001;
+
+            function increaseSize() {
+                var elem = document.getElementById("text");
+                var text = new Blotter.Text("LCK_73", {
+                    family: "NPB",
+                    weight: 100,
+                    size: 180,
+                    fill: "white",
+                    needsUpdate: true
+                });
+
+                var material = new Blotter.RollingDistortMaterial();
+
+                material.uniforms.uSineDistortAmplitude.value = 0.04;
+
+                var blotter = new Blotter(material, {
+                    texts: text
+                });
+
+                var scope = blotter.forText(text);
+
+                scope.appendTo(elem);
+
+                Size += 0.001;
+            }
+
+            increaseSize();
