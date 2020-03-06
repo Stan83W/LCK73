@@ -989,3 +989,6 @@ sup {
     display: none;
   }
 }
+.intro {
+  mix-blend-mode: soft-light;
+}
