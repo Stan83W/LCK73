@@ -377,7 +377,12 @@ textarea:focus {
   padding-left: 0;
   text-transform: uppercase;
 }
-
+@media (max-width: 900px) {
+  .navigation-wrapper ul {
+    margin-top: 0px;
+    margin-left: 1em;
+  }
+}
 .navigation-item {
   display: block;
   user-select: none;
@@ -437,7 +442,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   .navigation-list a {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
 
@@ -605,6 +610,12 @@ textarea:focus {
   margin-left: 32px;
   margin-right: 32px;
 }
+@media(max-width: 900px) {
+  .menu-line {
+    margin-left: 1em;
+    margin-right: 1em; 
+  }
+}
 
 /* Footer */
 
@@ -655,7 +666,11 @@ textarea:focus {
   margin: 32px;
   line-height: 1.3;
 }
-
+@media(max-width: 900px) {
+  .footer {
+    margin: 1em;
+  }
+}
 .collab p {
   font-family: "Cinzel";
   margin-bottom: 20px;
@@ -709,6 +724,14 @@ textarea:focus {
     font-size: 1rem;
     min-width: 250px;
   }
+}
+.info-page-title {
+  font-size: 20px;
+  font-family: "Cinzel";
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  color: grey;
 }
 .info-title {
   text-transform: uppercase;

@@ -1,24 +1,5 @@
 new WOW().init();
 
-// Hero Banner
-
-/*var textWrapper = document.querySelector(".h1");
-textWrapper.innerHTML = textWrapper.textContent.replace(
-  /\S/g,
-  "<span class='letter'>$&</span>"
-);
-$(document).ready(function() {
-  anime.timeline({ loop: false }).add({
-    targets: ".hero-title .letter",
-    translateY: [120, 0],
-    translateZ: 0,
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 2000 + 40 * i
-  });
-});*/
-
 var t1 = new TimelineMax({ paused: true });
 
 TweenMax.from(".hero-logo", 2, {
@@ -245,7 +226,7 @@ anime
 
 TweenMax.to(".loader", 2.2, {
     delay: 5,
-    top: "-100%",
+    top: "-110%",
     ease: Expo.easeInOut
 });
 
