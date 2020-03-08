@@ -226,7 +226,7 @@ anime
 
 TweenMax.to(".loader", 2.2, {
     delay: 5,
-    top: "-110%",
+    top: "-120%",
     ease: Expo.easeInOut
 });
 
@@ -294,30 +294,30 @@ TweenMax.from(".right-bottom-text", 2, {
 
 let Size = 0.001;
 
-            function increaseSize() {
-                var elem = document.getElementById("text");
-                var textvh = $(window).innerWidth() * 0.15; // 5 vh
-                var text = new Blotter.Text("LCK_73", {
-                    family: "NPB",
-                    weight: 100,
-                    size: textvh,
-                    fill: "white",
-                    needsUpdate: true
-                });
+  function increaseSize() {
+      var elem = document.getElementById("text");
+      var textvh = $(window).innerWidth() * 0.15; // 5 vh
+      var text = new Blotter.Text("LCK_73", {
+          family: "NPB",
+          weight: 100,
+          size: textvh,
+          fill: "white",
+          needsUpdate: true
+      });
 
-                var material = new Blotter.RollingDistortMaterial();
+      var material = new Blotter.RollingDistortMaterial();
 
-                material.uniforms.uSineDistortAmplitude.value = 0.04;
+      material.uniforms.uSineDistortAmplitude.value = 0.04;
 
-                var blotter = new Blotter(material, {
-                    texts: text
-                });
+      var blotter = new Blotter(material, {
+          texts: text
+      });
 
-                var scope = blotter.forText(text);
+      var scope = blotter.forText(text);
 
-                scope.appendTo(elem);
+      scope.appendTo(elem);
 
-                Size += 0.001;
-            }
+      Size += 0.001;
+  }
 
-            increaseSize();
+  increaseSize();

@@ -751,6 +751,12 @@ textarea:focus {
     font-size: 20px;
     margin: 1.2em 2em 2em 2em;
 }
+@media (max-width: 990px) {
+  .logo,
+  .lang {
+    margin: 1em;
+  }
+}
 
 .logo {
     color: white;
