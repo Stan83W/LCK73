@@ -998,3 +998,11 @@ sup {
 .intro {
   /*mix-blend-mode: soft-light;*/
 }
+
+#preloadfont {
+  font-family: "NPB";
+  opacity:0;
+  height:0;
+  width:0;
+  display:inline-block;
+}
