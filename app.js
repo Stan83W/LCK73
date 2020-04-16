@@ -301,6 +301,16 @@ TweenMax.from(".right-bottom-text", 2, {
 
 /* End of changes to import to Middleman */
 
+/* Hover Distort Effect */
+
+var hoverDistort = new hoverEffect({
+      parent: document.querySelector('.project-preview'),
+      intensity: 0.5,
+      image1: 'img-1.jpg',
+      image2: 'img-1.jpg',
+      displacementImage: '4.png'
+});
+
 // Percentage intro
 
 /*$(document).ready(function() {
