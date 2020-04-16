@@ -821,14 +821,20 @@ textarea:focus {
 }
 
 .container-right {
-    position: absolute;
+    /*position: absolute;
     width: 50%;
     height: 100vh;
     left: 50%;
     background: url(images/img-right.jpeg) no-repeat 50% 50%;
-    background-size: cover;
+    background-size: 100%;
     animation: animatedBackground1 4s cubic-bezier(0.19, 1, 0.22, 1);
-    animation-delay: 2.5s;
+    animation-delay: 2.5s;*/
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes animatedBackground1 {
