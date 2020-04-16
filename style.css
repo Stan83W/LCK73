@@ -825,7 +825,7 @@ textarea:focus {
     width: 50%;
     height: 100vh;
     left: 50%;
-    /*background: url(images/img-right.jpeg) no-repeat 50% 50%;*/
+    background: url(images/img-right.jpeg) no-repeat 50% 50%;
     background-size: 100%;
     animation: animatedBackground1 4s cubic-bezier(0.19, 1, 0.22, 1);
     animation-delay: 2.5s;
