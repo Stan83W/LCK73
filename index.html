@@ -40,9 +40,6 @@
       <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
 
-      <!-- Hover Distort Effect -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
-      <script src="hover-effect.umd.js"></script>
 
 </head>
 <body>
@@ -348,6 +345,19 @@
 
   <!-- greensock cdn --> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <!-- Hover Distort Effect -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+  <script src="hover-effect.umd.js"></script>
+  <script>
+    var hoverDistort = new hoverEffect({
+          parent: document.querySelector('.project-preview'),
+          intensity: 0.5,
+          image1: 'img-1.jpg',
+          image2: 'img-1.jpg',
+          displacementImage: '4.png'
+    });
+  </script>
   <script src="app.js"></script>
 </body>
 </html>
