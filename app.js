@@ -1,4 +1,3 @@
-console.log("coucou");
 new WOW().init();
 
 var t1 = new TimelineMax({ paused: true });
@@ -225,35 +224,44 @@ anime
         }
     });*/
 
+/* Changes to import to Middleman */
+
 TweenMax.to(".loader", 2.2, {
-    delay: 5,
-    top: "-120%",
+    delay: 2.5,
+    display: "none",
+    opacity: 0,
+    ease: Expo.easeInOut
+});
+
+TweenMax.to(".customFade", 2, {
+    delay: 1.5,
+    opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".logo", 2, {
-    delay: 6,
+    delay: 4,
     y: 10,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".lang", 2, {
-    delay: 6.1,
+    delay: 4.1,
     y: 10,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".info-right", 2, {
-    delay: 6.1,
+    delay: 4.1,
     y: 10,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".left-img-cap", 2, {
-    delay: 6.2,
+    delay: 4.2,
     y: 10,
     opacity: 0,
     ease: Expo.easeInOut
@@ -263,7 +271,7 @@ TweenMax.staggerFrom(
     ".social-media ul li",
     2,
     {
-        delay: 6.3,
+        delay: 4.3,
         opacity: 0,
         y: 20,
         ease: Power3.easeInOut
@@ -272,53 +280,42 @@ TweenMax.staggerFrom(
 );
 
 TweenMax.from(".left-bottom-text", 2, {
-    delay: 6.4,
+    delay: 4.4,
     y: 10,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".left-img-btn", 2, {
-    delay: 6.4,
+    delay: 4.4,
     scale: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".right-bottom-text", 2, {
-    delay: 6.7,
+    delay: 4.7,
     y: 10,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
-// Blotter intro
+/* End of changes to import to Middleman */
 
-let Size = 0.001;
+// Percentage intro
 
-  function increaseSize() {
-      var elem = document.getElementById("text");
-      var textvh = $(window).innerWidth() * 0.15; // 5 vh
-      var text = new Blotter.Text("LCK_73", {
-          family: "NPB",
-          weight: 100,
-          size: textvh,
-          fill: "white",
-          needsUpdate: true
-      });
+/*$(document).ready(function() {
+  var counter = 0;
+  loading();
+});
 
-      var material = new Blotter.RollingDistortMaterial();
+function loading(){
+  var num = 0;
 
-      material.uniforms.uSineDistortAmplitude.value = 0.04;
+  for(i=0; i<=73; i++) {
+    setTimeout(function() { 
+      $('.loader span').html(num);
+      num++;
+    },i*30);
+  };
+}*/
 
-      var blotter = new Blotter(material, {
-          texts: text
-      });
-
-      var scope = blotter.forText(text);
-
-      scope.appendTo(elem);
-
-      Size += 0.001;
-  }
-
-  increaseSize();

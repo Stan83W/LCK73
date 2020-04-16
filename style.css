@@ -784,16 +784,7 @@ textarea:focus {
     height: 100vh;
 }
 
-.container-right {
-    position: absolute;
-    width: 50%;
-    height: 100vh;
-    left: 50%;
-    background: url(images/img-right.jpeg) no-repeat 50% 50%;
-    background-size: 100%;
-    animation: animatedBackground1 6s cubic-bezier(0.19, 1, 0.22, 1);
-    animation-delay: 5s;
-}
+
 .container-right a {
   position: absolute;
   margin: 1.2em 2em 2em 2em;
@@ -810,36 +801,47 @@ textarea:focus {
   text-decoration: none;
 }
 
+/* Changes to import to Middleman */
+
+.right-upper-text {
+    position: absolute;
+    color: red;
+    font-size: 48px;
+    font-family: "NPR";
+    text-transform: uppercase;
+    padding: 5px;
+    opacity: 0;
+    animation: blinker 1s linear infinite;
+    animation-delay: 6s;
+    line-height: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-right {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    left: 50%;
+    background: url(images/img-right.jpeg) no-repeat 50% 50%;
+    background-size: 100%;
+    animation: animatedBackground1 4s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 2.5s;
+}
+
 @keyframes animatedBackground1 {
     from {
-        background-size: 460%;
+        background-size: 150%;
     }
     to {
         background-size: 100%;
     }
 }
 
-.container-left-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 400px;
-    background: url(images/img-left.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-    animation: animatedBackground2 6s cubic-bezier(0.19, 1, 0.22, 1);
-    animation-delay: 5s;
-}
+/* End of changes to import to Middleman */
 
-@keyframes animatedBackground2 {
-    from {
-        background-size: 760%;
-    }
-    to {
-        background-size: 210%;
-    }
-}
 
 .social-media {
     position: absolute;
@@ -880,22 +882,7 @@ textarea:focus {
   text-decoration: none;
 }
 
-.right-upper-text {
-    position: absolute;
-    color: red;
-    font-size: 48px;
-    font-family: "NPR";
-    text-transform: uppercase;
-    padding: 5px;
-    opacity: 0;
-    animation: blinker 1s linear infinite;
-    animation-delay: 8s;
-    line-height: 1em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+
 
 @keyframes blinker {
     50% {
@@ -942,7 +929,6 @@ textarea:focus {
     background: #000;
     z-index: 2;
     overflow: hidden;
-    background: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 0%), url("https://media.giphy.com/media/26OdjzL5Sl7Y4/giphy.gif") no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -1005,4 +991,114 @@ sup {
   height:0;
   width:0;
   display:inline-block;
+}
+
+/* Percentage loader */
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: customFade 2.5s ease;
+}
+.loader span {
+  font-size: 12em;
+  font-family: "NPB";
+  text-align: left;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.loader-title {
+  font-size: 20px;
+  font-family: "NPB";
+  text-transform: uppercase;
+  text-align: center;
+}
+.loader-subtitle {
+  font-size: 20px;
+  font-family: "Cinzel";
+  text-align: center;
+}
+.figures {
+  margin-top: -55px;
+}
+
+/* Pure CSS loader */
+
+@keyframes percentage {
+  1% {
+    content: "01";
+  }
+  2% {
+    content: "02";
+  }
+  3% {
+    content: "03";
+  }
+  8% {
+    content: "08";
+  }
+  10% {
+    content: "10";
+  }
+  11% {
+    content: "11";
+  }
+  19% {
+    content: "19";
+  }
+  20% {
+    content: "20";
+  }
+  28% {
+    content: "28";
+  }
+  30% {
+    content: "30";
+  }
+  31% {
+    content: "31";
+  }
+  38% {
+    content: "32";
+  }
+  42% {
+    content: "42";
+  }
+  55% {
+    content: "48";
+  }
+  58% {
+    content: "50";
+  }
+  65% {
+    content: "52";
+  }
+  70% {
+    content: "57";
+  }
+  74% {
+    content: "61";
+  }
+  75% {
+    content: "62";
+  }
+  80% {
+    content: "68";
+  }
+  83% {
+    content: "70";
+  }
+  85% {
+    content: "72";
+  }
+  100% {
+    content: "73";
+  }
+}
+
+.figures:after {
+  content: "00";
+  animation: percentage 1.5s ease forwards;
 }
